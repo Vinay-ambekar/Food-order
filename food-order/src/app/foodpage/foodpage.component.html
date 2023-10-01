@@ -1,0 +1,31 @@
+
+<div class="container">
+    
+        <div class="col-md-5">
+            <img class="img-thumbnail"[src]="food.imageUrl" [alt]="food.name">
+
+        </div>
+        <div class="col-md-5">
+            <div class="row-md-3 heading">
+                <span class="name">{{food.name}}</span>
+                <span class="favorite {{food.favorite?'':'not'}}">♥</span>
+            </div>
+            <div class="row-md-3 origins">
+                <span class="btn btn-primary btn-sm origin" *ngFor="let origin of food.origins">{{origin}}</span>
+            </div>
+            <div class="row-md-3 tag">
+                <app-tags class="food-tags" [foodPagetags]="food.tags"></app-tags>
+            </div>
+            <div class="row-md-3">
+                <span class="time">Time to cook about <strong>{{food.cookTime}}</strong></span>
+            </div>
+            <div class="row-md-3">
+                <span class="price">{{food.price|currency:'INR':'symbol':'3.2-2'}}</span>
+            </div>
+            <div class="row-md-3 CART ">
+                <button  class="btn btn-primary btn-lg btn-block">Add to cart</button>
+
+            </div>
+        </div>
+    
+</div>

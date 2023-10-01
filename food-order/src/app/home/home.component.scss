@@ -5,6 +5,7 @@ ul{
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    
 }
 ul li a{
     height: 20rem;
@@ -19,4 +20,22 @@ ul li a{
 }
 li a:hover{
     opacity: 0.9;
+}
+.origin{
+display: flex;
+
+}
+.favorite{
+    margin-left: 130px;
+}
+.cook-time{
+    margin-left: 130px;
+}
+.content{
+    margin-left: 25px;
+}
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 }
