@@ -2,6 +2,7 @@ import { Component , OnInit } from '@angular/core';
 import { Cart } from '../shared/models/cart';
 import { CartService } from '../services/cart.service';
 import { CartItem } from '../shared/models/cartitem';
+import { FoodService } from '../services/food/food.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -11,7 +12,9 @@ import { CartItem } from '../shared/models/cartitem';
 export class CartPageComponent  implements  OnInit{
   cart!:Cart;
   constructor(private cartService:CartService){
+  
     this.setCart()
+
   }
   
   ngOnInit(): void {
